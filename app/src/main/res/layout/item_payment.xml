@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:textSize="20sp"
+    android:text="@string/payment_text"
+    android:gravity="center_vertical"
+    android:layout_marginStart="10dp"
+    android:id="@+id/tv_payment"
+    android:textColor="@color/black"/>
+</com.balysv.materialripple.MaterialRippleLayout>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/add_card"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_card"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/online_app"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:text="@string/online_application"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/virtual_card"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:text="@string/virtual_card"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mycard_color"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mycard_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

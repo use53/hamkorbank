@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_nav"
+    app:startDestination="@id/splash_navigation">
+
+    <fragment
+        android:id="@+id/splash_navigation"
+        android:name="uz.mapbank.mapbankapi.ui.splashui.frgament.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/splash_fragment"/>
+    <fragment
+        android:id="@+id/singin_navigation"
+        android:name="uz.mapbank.mapbankapi.ui.splashui.frgament.SingInFragment"
+        tools:layout="@layout/singin_fragment"/>
+    <fragment
+        android:id="@+id/singup_fragment"
+        android:name="uz.mapbank.mapbankapi.ui.splashui.frgament.SingUpFragment"
+        tools:layout="@layout/singup_fragment"/>
+    <fragment
+        android:id="@+id/addcard_navigation"
+        tools:layout="@layout/fragment_twocode"
+        android:name="uz.mapbank.mapbankapi.ui.splashui.frgament.TwoCodeFragment"
+        android:label="AddCardFragment" />
+    <fragment
+        android:id="@+id/code_save_navigation"
+        tools:layout="@layout/code_save_fragment"
+        android:name="uz.mapbank.mapbankapi.ui.splashui.frgament.CodeSaveFragment"
+        android:label="CodeSaveFragment" />
+</navigation>

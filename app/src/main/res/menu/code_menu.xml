@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/code_call_menu"
+        android:title="@string/code_title"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_calling_3_24"/>
+
+
+</menu>

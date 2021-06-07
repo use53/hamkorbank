@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="uz.mapbank.mapbankapi.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_mycard"
+        android:name="uz.mapbank.mapbankapi.ui.home.MyCardFragment"
+        tools:layout="@layout/fragment_mycard"/>
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="uz.mapbank.mapbankapi.ui.payment.PaymentFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_payment" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="uz.mapbank.mapbankapi.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/exchange_navigation"
+        android:name="uz.mapbank.mapbankapi.ui.home.ExchangeFragment"
+        tools:layout="@layout/fragment_exchange"/>
+    <fragment
+        android:id="@+id/spinner_nav"
+        android:name="uz.mapbank.mapbankapi.ui.home.FragmentTransfers"
+        tools:layout="@layout/fragment_transfers"/>
+<fragment
+    android:id="@+id/loan_navigation"
+    android:name="uz.mapbank.mapbankapi.ui.home.FragmentLoanOnline"
+    tools:layout="@layout/fragment_loan"/>
+    <fragment
+        android:id="@+id/money_navigation"
+        android:name="uz.mapbank.mapbankapi.ui.home.FragmentMoney"
+        tools:layout="@layout/fragment_money"/>
+    <fragment
+        android:id="@+id/addcard_nav"
+        android:name="uz.mapbank.mapbankapi.ui.home.AddCardFragment"
+        tools:layout="@layout/fragment_addcard"/>
+    <fragment
+        android:id="@+id/qrcode_navigation"
+        android:name="uz.mapbank.mapbankapi.ui.payment.FragmentQrCode"
+        tools:layout="@layout/fragment_qrcode"/>
+</navigation>

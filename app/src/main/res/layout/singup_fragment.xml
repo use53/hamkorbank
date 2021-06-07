@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:id="@+id/singup_layout"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tollbar_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:layout_marginBottom="4dp"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_singup"
+            android:layout_width="match_parent"
+            app:navigationIcon="@drawable/ic_back_24"
+            app:title="Registration"
+            android:paddingBottom="3dp"
+            app:titleMarginBottom="5dp"
+            android:layout_marginBottom="3dp"
+            app:titleTextColor="@color/black"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/Theme.MapBankApi.PopupOverlay"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ev_add_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        app:cardElevation="5dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_margin="2dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/card_number"
+                app:boxBackgroundColor="@color/white"
+                app:hintTextColor="@color/color_two"
+                app:boxStrokeColor="@color/color_two"
+                android:textColorHint="@color/black"
+                android:layout_margin="@dimen/default_margin">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:textColorHint="@color/color_two"
+                    android:id="@+id/ed_card_number"
+                    android:inputType="number"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_carddate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/card_date"
+                app:boxBackgroundColor="@color/white"
+                app:hintTextColor="@color/color_two"
+                app:boxStrokeColor="@color/color_two"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+              >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card_date"
+                    android:lines="1"
+                    android:inputType="number"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/phone_number"
+                app:hintTextColor="@color/color_two"
+                app:boxStrokeColor="@color/color_two"
+                app:boxBackgroundColor="@color/white"
+                android:textColorHint="@color/black"
+                android:layout_margin="@dimen/default_margin"
+
+                >
+
+                <uz.invan.reduz.presentation.custom.maskedEditText.MaskedEditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="number"
+                    android:focusable="true"
+                    android:inputType="phone"
+                    android:textSize="18sp"
+                    app:mask="+998 (##) ### ## ##"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ev_add_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        app:cardElevation="5dp">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_name_singup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/label"
+        app:boxBackgroundColor="@color/white"
+        app:hintTextColor="@color/color_two"
+        app:boxStrokeColor="@color/color_two"
+        android:textColorHint="@color/black"
+        android:layout_margin="@dimen/default_margin">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColorHint="@color/color_two"
+            android:id="@+id/ed_name_singup"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_password_singup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/password"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black"
+        app:boxBackgroundColor="@color/white"
+        app:hintTextColor="@color/color_two"
+        app:boxStrokeColor="@color/color_two"
+        android:textColorHint="@color/black"
+        android:layout_margin="@dimen/default_margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColorHint="@color/color_two"
+            android:id="@+id/ed_password_singup"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/rotation_image"
+        android:layout_width="40dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/expand_more_24"
+        android:layout_height="30dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_mfo_singup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/mfo"
+        android:visibility="gone"
+        app:boxBackgroundColor="@color/white"
+        app:hintTextColor="@color/color_two"
+        app:boxStrokeColor="@color/color_two"
+        android:textColorHint="@color/black"
+        android:layout_margin="@dimen/default_margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColorHint="@color/color_two"
+            android:id="@+id/ed_mfo_singup"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_employee_singup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:hint="@string/emloyee"
+        app:boxBackgroundColor="@color/white"
+        app:hintTextColor="@color/status_bar"
+        app:boxStrokeColor="@color/status_bar"
+        android:textColorHint="@color/black"
+        android:layout_margin="@dimen/default_margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColorHint="@color/status_bar"
+            android:id="@+id/ed_employee_singup"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_next"
+        android:backgroundTint="@color/color_two"
+        android:layout_marginTop="40dp"
+        style="@style/DefaultButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

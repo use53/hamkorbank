@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:passcode="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/code_toolbar_two"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/code_image_two"
+        app:layout_constraintTop_toBottomOf="@+id/code_toolbar_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_account_two_24"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/code_tv_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code_image_two"
+        android:layout_marginTop="10dp"
+        android:text="@string/pin_code"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <com.nirigo.mobile.view.passcode.PasscodeIndicator
+        android:id="@+id/passcode_indicator_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        passcode:indicator_length="4"
+        app:indicator_background="@drawable/shape_passcode_indicator_ios"
+        app:indicator_background_active="@drawable/shape_passcode_indicator_fill_ios"
+        android:layout_gravity="center"
+        passcode:indicator_level="0"
+        passcode:indicator_margin="15dp"
+        app:indicator_size="22dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/code_tv_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/forgot_two"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/passcode_indicator_two"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="@string/forgot"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <View
+        android:id="@+id/code_lines_two"
+        app:layout_constraintTop_toBottomOf="@id/forgot_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/mycard_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.nirigo.mobile.view.passcode.PasscodeView
+        android:id="@+id/passcode_view_two"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        app:layout_goneMarginTop="20dp"
+        android:layout_below="@id/passcode_indicator_two"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/code_lines_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="210dp"
+         android:layout_marginEnd="15dp"
+         android:layout_marginStart="15dp"
+         android:layout_marginTop="20dp"
+         android:background="@drawable/card_model">
+
+         <androidx.appcompat.widget.AppCompatTextView
+             android:id="@+id/tv_cardnumber"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="30dp"
+             android:layout_marginStart="20dp"
+             android:textColor="@color/white"
+             app:layout_constraintBottom_toTopOf="@+id/tv_date"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent" />
+
+         <androidx.appcompat.widget.AppCompatTextView
+             android:id="@+id/tv_date"
+             android:textColor="@color/white"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="30dp"
+             android:layout_marginStart="20dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent" />
+     </androidx.constraintlayout.widget.ConstraintLayout>
+&lt;!&ndash; </androidx.cardview.widget.CardView>&ndash;&gt;
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <androidx.appcompat.widget.LinearLayoutCompat
+         android:layout_width="match_parent"
+         android:orientation="vertical"
+         android:layout_marginTop="20dp"
+         android:layout_height="wrap_content">
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/ed_cardnum"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:layout_marginStart="10dp"
+             android:layout_marginEnd="10dp"
+             android:hint="@string/card_number"
+             app:hintTextColor="@color/status_bar"
+             app:boxStrokeColor="@color/status_bar"
+             android:textColorHint="@color/status_bar"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/card_number"
+                 android:lines="1"
+                 android:maxLength="20"
+                 android:inputType="number"
+                 />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/ed_carddate"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="@string/card_date"
+             app:hintTextColor="@color/status_bar"
+             app:boxStrokeColor="@color/status_bar"
+             android:textColorHint="@color/status_bar"
+             android:layout_marginTop="10dp"
+             android:layout_marginStart="10dp"
+             android:layout_marginEnd="10dp"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/card_date"
+                 android:lines="1"
+                 android:inputType="number"
+                 />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+
+        &lt;!&ndash; <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/ed_name"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="@string/card_name"
+             app:hintTextColor="@color/status_bar"
+             app:boxStrokeColor="@color/status_bar"
+             android:textColorHint="@color/status_bar"
+             android:layout_marginTop="10dp"
+             android:layout_marginStart="10dp"
+             android:layout_marginEnd="10dp"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/card_name"
+                 android:lines="1"
+                 android:inputType="text"
+                 />
+
+         </com.google.android.material.textfield.TextInputLayout>
+&ndash;&gt;
+         <com.google.android.material.button.MaterialButton
+             android:id="@+id/save"
+             android:layout_marginTop="60dp"
+             style="@style/DefaultButtonStyle"
+             android:layout_width="match_parent"
+             android:backgroundTint="@color/status_bar"
+             android:layout_height="wrap_content"
+             android:text="@string/save" />
+     </androidx.appcompat.widget.LinearLayoutCompat>
+ </ScrollView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

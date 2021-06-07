@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+  <androidx.appcompat.widget.LinearLayoutCompat
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_width="match_parent"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:orientation="vertical"
+      android:id="@+id/ls_card_item"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/card_models"
+      android:layout_height="200dp">
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_gravity="end"
+          android:scaleType="fitEnd"
+          android:layout_marginEnd="30dp"
+          android:layout_marginTop="15dp"
+          android:src="@drawable/icons_master"/>
+      <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:gravity="start"
+          android:textSize="22sp"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="10dp"
+          android:text="8600   4725   5233   9392"/>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:gravity="start"
+          android:layout_margin="20dp"
+          android:textSize="25sp"
+          android:layout_marginTop="10dp"
+          android:text="725 634.00 UZS "/>
+
+
+  </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_margin="2dp"
+        android:id="@+id/ls_card"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/ls_card_item"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_card_number_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/card_name"
+            app:boxBackgroundColor="@color/white"
+            app:hintTextColor="@color/status_bar"
+            app:boxStrokeColor="@color/status_bar"
+            app:endIconDrawable="@drawable/ic_outline_edit_24"
+            app:endIconCheckable="true"
+            android:textColorHint="@color/black"
+            android:layout_margin="@dimen/default_margin">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="Ipoteka"
+                android:textColorHint="@color/status_bar"
+                android:id="@+id/ed_card_number"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_carddate_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/card_number"
+            app:boxBackgroundColor="@color/white"
+            app:hintTextColor="@color/status_bar"
+            app:boxStrokeColor="@color/status_bar"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_date_items"
+                android:lines="1"
+                android:text="8600 **** **** 9392"
+                android:inputType="number"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_carddate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/card_expiry"
+            app:boxBackgroundColor="@color/white"
+            app:hintTextColor="@color/status_bar"
+            app:boxStrokeColor="@color/status_bar"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_date"
+                android:lines="1"
+                android:text="01/12"
+                android:inputType="number"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/status_bar"
+        android:backgroundTint="@color/status_bar"
+        android:src="@drawable/ic_outline_edit_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
