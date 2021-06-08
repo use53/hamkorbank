@@ -36,5 +36,11 @@ class PaymentItem(){
 
         }
 
+    fun newsItem():MutableList<News> =
+
+        mutableListOf<News>().apply {
+            add(News("Dear customers","19.10.2020","Now you can transfer money to the account"))
+        }
+
 
 }

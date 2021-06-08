@@ -4,11 +4,8 @@
     <string name="title_activity_activty_card">ActivtyCard</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Hide balanse</string>
-
     <string name="menu_home">Main</string>
     <string name="menu_gallery">Payments</string>
     <string name="menu_slideshow">Add card</string>
@@ -20,17 +17,14 @@
     <string name="label">Login</string>
     <string name="next">NEXT</string>
     <string name="password">Password</string>
-    <string name="tv_text">Ma\'lumotlar kiriting</string>
     <string name="card_number">Card number</string>
     <string name="card_date">Validity of the card (MMYY)</string>
-    <string name="save">Saqlash</string>
+    <string name="save">Save</string>
     <string name="pin_code">Enter PIN code</string>
     <string name="code_title">Call</string>
     <string name="error_name">Such user is not found in this device Please,register your card again</string>
-    <string name="list_null">Ism yoki parol bo\'sh</string>
     <string name="save_name">"To continue you must read the terms of the public offer"</string>
-    <string name="card_date_save">Karta raqami yoki muddati xato</string>
-    <string name="error_code">Kod xato qartadan kiriting</string>
+    <string name="error_code">error code</string>
     <string name="action_sms">News</string>
     <string name="action_scanner">Qr code</string>
     <string name="Total_amount">Total amount</string>
@@ -65,10 +59,10 @@
     <string name="qr_code">QR CODE</string>
     <string name="card_name">Card name</string>
     <string name="card_expiry">Card expiry</string>
-    <string name="lets_grow">LETS GROW TOGETHER</string>
     <string name="joint_strock">Joint Stock Commercial Bank with Foreign Capital \"Hamkorbak\"</string>
     <string name="mfo">MFO</string>
     <string name="emloyee">Employee Id</string>
     <string name="forgot">Forgot?</string>
     <string name="name">Name</string>
+    <string name="code_error">Error. Please try again</string>
 </resources>

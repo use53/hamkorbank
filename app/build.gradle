@@ -83,5 +83,10 @@ dependencies {
     //textcounter
     implementation 'com.github.premnirmal:TextCounter:1.1.0'
     implementation 'com.budiyev.android:code-scanner:2.1.0'
+//dialog
+    implementation 'com.github.mejdi14:Flat-Dialog-Android:1.0.5'
+
+    //recylerview
+    implementation 'com.ernestoyaquello.dragdropswiperecyclerview:drag-drop-swipe-recyclerview:1.0.2'
 
 }

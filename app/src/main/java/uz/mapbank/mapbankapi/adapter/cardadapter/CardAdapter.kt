@@ -18,8 +18,6 @@ import uz.mapbank.mapbankapi.room.HistoryDB
 class CardAdapter:ListAdapter<HistoryDB,CardAdapter.cardVh>(Callback()) {
 
 
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): cardVh {
         val view =ItemViewBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return cardVh(view)

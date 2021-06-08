@@ -1,5 +1,6 @@
 package uz.mapbank.mapbankapi
 
+import android.content.Context
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -39,7 +40,9 @@ class ActivtyCard : AppCompatActivity() {
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
+                R.id.nav_home,
+                R.id.nav_gallery,
+                R.id.nav_slideshow,
                 R.id.nav_slideshow,
                 R.id.exchange_navigation,
                 R.id.nav_mycard,
@@ -99,7 +102,9 @@ class ActivtyCard : AppCompatActivity() {
                      navController.navigate(R.id.qrcode_navigation)
                      true
                  }
-                 R.id.action_sms->{true}
+                 R.id.action_sms->{
+                  navController.navigate(R.id.news_navigation)
+                     true}
              else->super.onOptionsItemSelected(item)
          }
 
@@ -109,5 +114,9 @@ class ActivtyCard : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+    override fun attachBaseContext(newBase: Context?) {
+        super.attachBaseContext(LocaleManager.setLocal(newBase!!))
+
     }
 }

@@ -23,7 +23,7 @@ import java.lang.StringBuilder
 
 class TwoCodeFragment:BasaFragment(R.layout.fragment_twocode), PasscodeView.OnItemClickListener {
 
-    private var twoBinding:FragmentTwocodeBinding?=null
+    private var twoBinding: FragmentTwocodeBinding?=null
     private val passcodeAdapter by lazyFast { PasscodeAdapter(requireContext()) }
     private var stringBuilder= StringBuilder()
     private val list= mutableListOf<Int>()
@@ -74,7 +74,7 @@ class TwoCodeFragment:BasaFragment(R.layout.fragment_twocode), PasscodeView.OnIt
                     }
                 }else{
                     twoBinding!!.passcodeIndicatorTwo.wrongPasscode()
-                    requireContext().toast("qayta tering")
+                    requireContext().toast(getString(R.string.code_error))
                     navController.popBackStack()
                 }
             })

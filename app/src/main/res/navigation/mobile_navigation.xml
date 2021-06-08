@@ -50,4 +50,8 @@
         android:id="@+id/qrcode_navigation"
         android:name="uz.mapbank.mapbankapi.ui.payment.FragmentQrCode"
         tools:layout="@layout/fragment_qrcode"/>
+    <fragment
+        android:id="@+id/news_navigation"
+        android:name="uz.mapbank.mapbankapi.ui.payment.FragmentNews"
+        tools:layout="@layout/fragment_news"/>
 </navigation>
